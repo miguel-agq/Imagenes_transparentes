@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="378dp"
+        android:layout_height="407dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutSombreros">
+
+        <ImageView
+            android:id="@+id/jesse"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/gafas"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/sombrero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutGafas"
+        android:layout_width="409dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.016">
+
+        <ImageButton
+            android:id="@+id/btn_gafas_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="usarComplemento"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:background="@color/oatmeal"
+            android:src="@drawable/gafas1_ico" />
+
+        <ImageButton
+            android:id="@+id/btn_gafas_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="usarComplemento"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:background="@color/oatmeal"
+            android:src="@drawable/gafas2_ico" />
+
+        <ImageButton
+            android:id="@+id/btn_gafas_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="usarComplemento"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:background="@color/oatmeal"
+            android:src="@drawable/gafas3_ico" />
+
+        <ImageButton
+            android:id="@+id/btn_gafas_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="usarComplemento"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:background="@color/oatmeal"
+            android:src="@drawable/gafas4_ico" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSombreros"
+        android:layout_width="409dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutGafas"
+        app:layout_constraintVertical_bias="0.172">
+
+        <ImageButton
+            android:id="@+id/btn_sombrero_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="usarComplemento"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:background="@color/oatmeal"
+            android:src="@drawable/sombrero1_ico" />
+
+        <ImageButton
+            android:id="@+id/btn_sombrero_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="usarComplemento"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:background="@color/oatmeal"
+            android:src="@drawable/sombrero2_ico" />
+
+        <ImageButton
+            android:id="@+id/btn_sombrero_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="usarComplemento"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:background="@color/oatmeal"
+            android:src="@drawable/sombrero3_ico" />
+
+        <ImageButton
+            android:id="@+id/btn_sombrero_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="usarComplemento"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:background="@color/oatmeal"
+            android:src="@drawable/sombrero4_ico" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
